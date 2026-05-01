@@ -99,7 +99,7 @@ tr:hover {
     margin-right: 15px;
 }
 
-.kaptan-kart img {
+.kaptan-kart > img {
     transition: 0.4s;
     width: 100%;
     height: 260px;
@@ -113,10 +113,10 @@ tr:hover {
 }
 
 .kaptan-kart p{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .oyuncu-kart p{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .oyuncu-container{
     display: flex;
@@ -144,6 +144,12 @@ tr:hover {
     transition: 0.4s;
     transform: scale(1.05); 
     box-shadow: 0 0 25px rgba(232, 161, 7, 0.589);
+}
+
+.sosyal-medya img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 form {
