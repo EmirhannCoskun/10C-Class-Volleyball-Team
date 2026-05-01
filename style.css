@@ -83,10 +83,10 @@ tr:hover {
   background: #1a2a41;
 }
 
-.kaptan-container {
+.kaptan-container, .oyuncu-container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* küçük ekranda alt alta düşsün */
+    flex-wrap: wrap; 
 }
 
 .kaptan-kart {
@@ -97,6 +97,11 @@ tr:hover {
     overflow: hidden;
     text-align: center;
     margin-right: 15px;
+}
+.kaptan-kart h3, .oyuncu-kart h3 {
+  color: #9ad7f1;
+  margin: 15px 0 5px;
+  font-size: 18px;
 }
 
 .kaptan-kart > img {
@@ -109,20 +114,14 @@ tr:hover {
 .kaptan-kart:hover{
     
     transform: scale(1.05); 
-    box-shadow: 0 0 25px rgba(188, 231, 18, 0.558);
+    box-shadow: 0 0 25px rgba(188, 231, 18, 0.834);
 }
 
-.kaptan-kart p{
-    margin-bottom: 5px;
+.kaptan-kart p, .oyuncu-kart p {
+  color: #cbd5f5;
+  font-size: 14px;
 }
-.oyuncu-kart p{
-    margin-bottom: 5px;
-}
-.oyuncu-container{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* küçük ekranda alt alta düşsün */
-}
+
 
 .oyuncu-kart{
     width: 275px;
@@ -143,15 +142,39 @@ tr:hover {
 .oyuncu-kart:hover{
     transition: 0.4s;
     transform: scale(1.05); 
-    box-shadow: 0 0 25px rgba(232, 161, 7, 0.589);
+    box-shadow: 0 0 25px rgba(232, 7, 228, 0.781);
 }
 
-.sosyal-medya img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
+.sosyal-medya {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
+.sosyal-medya a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(38, 189, 250, 0.1);
+  transition: 0.3s;
+}
+
+.sosyal-medya a:hover {
+  background: rgb(70, 6, 154);
+  transform: translateY(-3px);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #73c9ee;
+  font-weight: 500;
+}
 form {
   background: #1e293b;
   padding: 20px;
@@ -191,6 +214,10 @@ button {
 button:hover {
   background: #0284c7;
   transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);  
 }
 
 footer {
