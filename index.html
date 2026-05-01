@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10C Sınıf Voleybol Takımı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+    <h1>10C Voleybol Takımı</h1>
+    <p>Bir takımdan daha fazlası</p>
+    <nav>
+      <a href="#hakkinda">Hakkında</a>
+      <a href="#takimKadrosu">Takım Kadrosu</a>
+      <a href="#fikstur">Maç Fikstürü</a>
+      <a href="#takimaKatilimFormu">Katılma Formu</a>
+    </nav>
+  </header>
+
+    <main>
+      <section id="hakkinda">
+        <h2>Takımımız Hakkında</h2>
+        <p>
+          10C Voleybol Takımı, sınıfımızı temsil etmek ve aramızdaki takım
+          ruhunu güçlendirmek amacıyla kurulmuş bir öğrenci voleybol ekibidir.
+          Amacımız sadece maç kazanmak değil, birlikte hareket etmeyi öğrenmek,
+          disiplinli çalışmak ve eğlenerek gelişmektir. Takımımızda farklı
+          mevkilerde oynayan oyuncular yer almakta ve herkes kendi rolünü en iyi
+          şekilde üstlenmeye çalışmaktadır. Antrenmanlarda hem bireysel gelişime
+          hem de takım uyumuna önem veriyoruz. Her geçen gün daha iyi iletişim
+          kurarak sahada daha güçlü bir ekip olmayı hedefliyoruz. 2026 sezonunda
+          hedefimiz, katıldığımız turnuvalarda en iyi performansı sergileyerek
+          10C sınıfını en iyi şekilde temsil etmek ve aynı zamanda unutulmaz bir
+          takım deneyimi yaşamaktır.
+        </p>
+      </section>
+
+      <section id="fikstur">
+        <h2>Maç Fikstürü</h2>
+        <table border="1">
+          <tr>
+            <th>Maç</th>
+            <th>Tarih</th>
+          </tr>
+          <tr>
+            <td>10C-11B(2)</td>
+            <td>Henüz belirlenmedi.</td>
+          </tr>
+        </table>
+      </section>
+      <section id="takimKadrosu">
+        <h2>Takım Kaptanları</h2>
+
+        <div class="kaptan-container">
+          <div class="kaptan-kart">
+            <img src="images/ecrin.jpeg" 
+            alt="ecrin'in fotoğrafı bulunamadı." />
+            <h3>Ecrin</h3>
+            <p>Libero</p>
+          </div>
+
+          <div class="kaptan-kart">
+            <img src="images/emirhan.jpeg"
+              alt="emirhan'ın fotoğrafı bulunamadı."
+            />
+            <h3>Emirhan</h3>
+            <p>Pasör</p>
+          </div>
+        </div>
+
+        <h2>Takım Üyeleri</h2>
+        <div class="oyuncu-container">
+          <div class="oyuncu-kart">
+            <img src="images/ege.jpeg" 
+            alt="ecrin'in fotoğrafı bulunamadı." />
+            <h3>Ayhan Ege</h3>
+            <p>Pasör Çarprazı</p>
+          </div>
+
+          <div class="oyuncu-kart">
+            <img src="images/isik.jpeg" 
+            alt="Işık'ın fotoğrafı bulunamadı." />
+            <h3>Işık</h3>
+            <p>Pasör</p>
+          </div>
+
+          <div class="oyuncu-kart">
+            <img
+              src="images/yagmur.jpeg"
+              alt="Yağmur'un fotoğrafı bulunamadı."
+            />
+            <h3>Yağmur</h3>
+            <p>Smaçör</p>
+          </div>
+
+          <div class="oyuncu-kart">
+            <img src="images/kagan.jpeg" alt="Kağan'ın fotoğrafı bulunamadı." />
+            <h3>Kağan</h3>
+            <p>Orta Oyuncu</p>
+          </div>
+
+          <div class="oyuncu-kart">
+            <img src="images/melek.jpeg" alt="Melek'in fotoğrafı bulunamadı." />
+            <h3>Melek</h3>
+            <p>Libero</p>
+          </div>
+
+          <div class="oyuncu-kart">
+            <img src="images/numan.jpeg" alt="Numan'ın fotoğrafı bulunamadı." />
+            <h3>Numan</h3>
+            <p>Orta Oyuncu</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="takimaKatilimFormu">
+        <h2>Takıma Katılım Formu</h2>
+        <form>
+          <label for="adSoyad"><strong>Ad Soyad:</strong></label>
+          <input 
+          type="text" 
+          id="adSoyadId"
+          placeholder="Ad Soyad" 
+          required 
+          />
+
+          <label for="mevki"><strong>Mevki:</strong></label>
+          <select name="mevkiler" id="mevkilerId">
+            <option value="pasor">Pasör</option>
+            <option value="ortaOyuncu">Orta Oyuncu</option>
+            <option value="smacor">Smaçör</option>
+            <option value="pasorCaprazi">Pasör Çaprazı</option>
+            <option value="libero">Libero</option>
+          </select>
+
+          <label for="email"><strong>Email:</strong></label>
+          <input
+            type="email"
+            id="emailId"
+            placeholder="voleybol123@gmail.com"
+            required
+          />
+
+          <label for="aciklama"><strong>Açıklama:</strong></label>
+          <textarea name="aciklamaInput" id="aciklamaId" cols="70" rows="10">
+          </textarea>
+
+          <button
+            id="gonderId"
+            type="submit"
+            style="padding: 10px; font-size: 13px"
+          >
+            <strong>Gönder</strong>
+          </button>
+
+          <button
+            id="temizleId"
+            type="reset"
+            style="padding: 10px; font-size: 13px"
+          >
+            <strong>Temizle</strong>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <p>
+          <strong>© 2026 10C Sınıf Voleybol Takımı 
+            Tüm hakları saklıdır.</strong>
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

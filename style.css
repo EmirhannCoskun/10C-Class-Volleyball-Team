@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0a101e;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+header{
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 9px;
+    text-align: center;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1{
+    color: #2ebdfa;
+    margin-bottom: 5x;
+}
+
+header p{
+    margin-bottom: 8px;
+}
+nav a {
+  margin: 0 7px;
+  text-decoration: none;
+  color: #cbd5f5;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #38bdf8;
+  text-shadow: 0 0 8px #2888b1;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2{
+  margin-top:20px ;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #032357;
+  color: rgba(255, 255, 255, 0.927);
+}
+
+tr:nth-child(even) {
+  background: #033249;
+}
+
+tr:hover {
+  background: #1a2a41;
+}
+
+.kaptan-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* küçük ekranda alt alta düşsün */
+}
+
+.kaptan-kart {
+    transition: 0.4s;
+    width: 275px;
+    background: #020617;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.kaptan-kart img {
+    transition: 0.4s;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.kaptan-kart:hover{
+    
+    transform: scale(1.05); 
+    box-shadow: 0 0 25px rgba(188, 231, 18, 0.558);
+}
+
+.oyuncu-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* küçük ekranda alt alta düşsün */
+}
+
+.oyuncu-kart{
+    width: 275px;
+    background: #020617;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.oyuncu-kart img {
+    transition: 0.4s;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.oyuncu-kart:hover{
+    transition: 0.4s;
+    transform: scale(1.05); 
+    box-shadow: 0 0 25px rgba(232, 161, 7, 0.589);
+}
+
+form {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  background: #0f172a;
+  color: #e2e8f0;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 1px solid #38bdf8;
+}
+
+input,select,textarea p{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #2079a1a9;
+  color: rgba(255, 255, 255, 0.836);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  margin-top: 25px;
+}
+
+section {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
