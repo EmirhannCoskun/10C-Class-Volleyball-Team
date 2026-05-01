@@ -112,6 +112,12 @@ tr:hover {
     box-shadow: 0 0 25px rgba(188, 231, 18, 0.558);
 }
 
+.kaptan-kart p{
+    margin-bottom: 10px;
+}
+.oyuncu-kart p{
+    margin-bottom: 10px;
+}
 .oyuncu-container{
     display: flex;
     gap: 20px;
