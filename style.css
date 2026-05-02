@@ -5,6 +5,10 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0a101e;
   color: #e2e8f0;
@@ -20,6 +24,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.4);
 }
 
 header h1{
@@ -36,6 +41,17 @@ nav a {
   color: #cbd5f5;
   transition: 0.3s;
   font-weight: 500;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #38bdf8;
+  transition: 0.3s;
 }
 
 nav a:hover {
