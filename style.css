@@ -13,8 +13,8 @@ body {
 
 header{
     background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 9px;
+    backdrop-filter: blur(7px);
+    padding: 10px;
     text-align: center;
     border-bottom: 1px solid #1e293b;
     position: sticky;
@@ -57,26 +57,34 @@ h2{
   padding-left: 10px;
 }
 
+#hakkinda p{
+  margin-bottom: 8px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
-  background: #1e293b;
-  border-radius: 10px;
+  background: #888888;
+  border-style: solid;
+  border-radius: 12px;
   overflow: hidden;
 }
 
 th, td {
   padding: 12px;
+  border-style: solid;
+  border-color: #888888;
   text-align: center;
 }
 
 th {
-  background: #032357;
-  color: rgba(255, 255, 255, 0.927);
+  background: #01122d;
+  color: #ffffff;
+  
 }
 
 tr:nth-child(even) {
-  background: #033249;
+  background: #092330;
+  color: #ffffff;
 }
 
 tr:hover {
@@ -114,7 +122,7 @@ tr:hover {
 .kaptan-kart:hover{
     
     transform: scale(1.05); 
-    box-shadow: 0 0 25px rgba(188, 231, 18, 0.834);
+    box-shadow: 0 0 25px rgba(186, 230, 11, 0.882);
 }
 
 .kaptan-kart p, .oyuncu-kart p {
@@ -142,7 +150,7 @@ tr:hover {
 .oyuncu-kart:hover{
     transition: 0.4s;
     transform: scale(1.05); 
-    box-shadow: 0 0 25px rgba(232, 7, 228, 0.781);
+    box-shadow: 0 0 25px rgba(232, 7, 228, 0.804);
 }
 
 .sosyal-medya {
@@ -217,10 +225,10 @@ button:active {
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 8px;
   background: #020617;
   border-top: 1px solid #1e293b;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 section {
