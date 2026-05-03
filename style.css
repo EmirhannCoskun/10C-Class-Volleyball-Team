@@ -141,7 +141,6 @@ tr:hover {
 }
 
 .kaptan-kart:hover{
-    
     transform: scale(1.05); 
     box-shadow: 0 0 25px rgba(186, 231, 6, 0.825);
 }
@@ -194,6 +193,7 @@ tr:hover {
     transform: scale(1.05); 
     box-shadow: 0 0 25px rgba(5, 2, 199, 0.9);
 }
+
 .sosyal-medya {
   padding: 15px;
   display: flex;
