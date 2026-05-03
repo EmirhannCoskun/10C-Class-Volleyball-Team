@@ -29,11 +29,11 @@ header{
 
 header h1{
     color: #2ebdfa;
-    margin-bottom: 5x;
+    margin-bottom: 3px;
 }
 
 header p{
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 nav a {
   margin: 0 7px;
@@ -107,7 +107,7 @@ tr:hover {
   background: #1a2a41;
 }
 
-.kaptan-container, .oyuncu-container {
+.kaptan-container, .oyuncu-container, .yedek-container{
     display: flex;
     gap: 20px;
     flex-wrap: wrap; 
@@ -138,7 +138,7 @@ tr:hover {
 .kaptan-kart:hover{
     
     transform: scale(1.05); 
-    box-shadow: 0 0 25px rgba(186, 230, 11, 0.882);
+    box-shadow: 0 0 25px rgba(186, 231, 6, 0.825);
 }
 
 .kaptan-kart p, .oyuncu-kart p {
@@ -166,9 +166,29 @@ tr:hover {
 .oyuncu-kart:hover{
     transition: 0.4s;
     transform: scale(1.05); 
-    box-shadow: 0 0 25px rgba(232, 7, 228, 0.804);
+    box-shadow: 0 0 25px rgba(168, 5, 165, 0.918);
+}
+.yedek-kart{
+    width: 275px;
+    background: #020617;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 15px;
 }
 
+.yedek-kart img {
+    transition: 0.4s;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.yedek-kart:hover{
+    transition: 0.4s;
+    transform: scale(1.05); 
+    box-shadow: 0 0 25px rgba(5, 2, 199, 0.9);
+}
 .sosyal-medya {
   padding: 15px;
   display: flex;
