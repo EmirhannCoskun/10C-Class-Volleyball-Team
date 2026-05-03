@@ -122,12 +122,17 @@ tr:hover {
     text-align: center;
     margin-right: 15px;
 }
-.kaptan-kart h3, .oyuncu-kart h3, .yedek-kart h3 {
+.kaptan-kart h3, .oyuncu-kart h3 {
   color: #9ad7f1;
   margin: 15px 0 5px;
   font-size: 18px;
 }
 
+.yedek-kart h3{
+  color: #9ad7f1;
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
 .kaptan-kart > img {
     transition: 0.4s;
     width: 100%;
